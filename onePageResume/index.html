@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+	<head>
+		<link type="text/css" rel="stylesheet" href="resume.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+		<title>Anderson Ng</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="jquery.visible.js"></script>
+		<script src="typed.js"></script>
+		<script>
+  			$(function(){
+      			$("#titleText").typed({
+        			strings: ["Hello World; ^1000", "I'm Anderson.^1000 Welcome to my website"],
+        			typeSpeed: 30,
+        			backSpeed: 10
+      			});
+  			});
+  			
+  			
+			$(window).scroll(function(){			
+				// Is this element visible onscreen?
+				var visible = $('.slide-in').visible();
+				if (visible){
+					$(function() {
+    					$('#iphone1').animate({left :"60%"},1500 );
+					});
+				}
+
+				var visible2 = $('.slide-in2').visible();
+				if (visible2){
+					$(function() {
+    					$('#iphone2').animate({left :"20%"},1000 );
+					});
+				}
+			});
+						
+			
+			
+  			var scroll = function(){
+  				$('html, body').animate({scrollTop: $("#about").offset().top}, 1000)
+  			};
+
+
+
+		</script>
+		<div id="title">
+			<div id="text-wrapper">
+				<span id="titleText"></span>
+			</div>
+			<div id="arrow" onclick="scroll()"><i class="fa fa-caret-down fa-4x"><a href="about"></a></i></div>
+		</div>
+		
+		
+		<div id="main">
+			<!--First section of site-->
+			<section id = "about" class="browserText">
+				<p>What's Up</p>
+				<div id="about-content" class = "info-text">
+					<p>I'd like to call myself a master of code in the near future. Currently a noob trying to become a software developer. Interested in Web Design, iOS App Developments and solving Rubik's cubes.</p>
+				</div>
+				<!--Macbook content-->
+				<div class="md-macbook-pro">
+    				<div class="md-lid">
+        				<div class="md-camera"></div>
+        				<div class="md-screen">
+	  						<div id="top-bar">
+	  							<div id="btn" class="red"></div>
+	  							<div id="btn" class="yellow"></div>
+	  							<div id="btn" class="green"></div>
+	  							<div id="mac-content">
+	  								>>> name = <span>"Anderson"</span><br/>
+	  								>>> age = <span>"19"</span><br/>
+	  								>>> location = <span>"Milton, ON"</span><br/>
+	  								>>> school = <span>"University of Toronto"</span><br/>
+	  								>>> languages = [<span>"Python"</span>, <span>"HTML/CSS"</span>, 
+	  									<span>"JavaScript/JQuery"</span>, <span>"Swift"</span>]<br/>
+	  								>>> email = <span><a href="mailto:anderson202@live.hk" title="Send me an Email!">
+	  								"anderson202@live.hk"</a></span><br/>
+	  								>>> resume = <span><a href="ProgrammingRes.pdf" title="Download my Resume!">"Resume.pdf"</a></span><br/>
+	  								>>> _
+	  							</div>
+	  						</div>
+        				</div>
+    				</div>
+    				<div class="md-base"></div>
+				</div>
+			</section>
+			<section id = "work" class="browserText">
+				<p>Personal Projects</p>
+				<div class = "info-text">A personal website isn't personal enough without some projects!</div>
+				<!--Soundboard Content-->
+				<div id = "soundboard-info", class = "info-text">
+					<div class ="slide-in">
+						<a href = "https://github.com/anderson202/kamensoundboard" title = "Go to Github Repo"><b><i class="fa fa-github fa-2x"></i>Kamen Rider Soundboard</b></a>
+						<div id = "soundboard-content">
+							Soundboard of rider transformation sounds from the show "Kamen Rider: Decade"<br/>
+							<i>Made with UIKit, AVFoundation</i>
+						</div>
+					</div>
+					
+
+					<div id = "iphone1" class="md-iphone-5 md-black-device md-landscape">
+   						<div class="md-body">
+      						<div class="md-buttons"></div>
+      						<div class="md-front-camera"></div>
+      						<div class="md-top-speaker"></div>
+      						<div class="md-screen">
+      							<img src = "images/soundboard1.png"/>
+      						</div>
+      						<button class="md-home-button"></button>
+  						</div>
+					</div>
+				</div>
+
+				<!--Lotto Content-->
+
+				<div id = "lotto-info", class = "info-text">
+					<div class ="slide-in2">
+						<a href = "https://github.com/anderson202/lotto" title = "Go to Github Repo"><b><i class="fa fa-github fa-2x"></i>Lotto</b></a>
+						<div id = "soundboard-content">
+							A Lotto app where users are able to presses a button to generate 6 digits and also select the winning lotto combination<br/>
+							<i>Made with UIKit</i>
+						</div>
+					</div>
+
+					<div id = "iphone2" class="md-iphone-5 md-white-device">
+   						<div class="md-body">
+      						<div class="md-buttons"></div>
+      						<div class="md-front-camera"></div>
+      						<div class="md-top-speaker"></div>
+      						<div class="md-screen">
+      							<img src = "images/lotto1.png"/>
+      						</div>
+      						<button class="md-home-button"></button>
+  						</div>
+					</div>
+				</div>
+				<div id= "end"><p>Still Under Construction, More to come!</p></div>
+				
+			</section>
+			<section id = "contact" class="browserText">
+				<div id= "end"><p>Looking for more?</p></div>
+				<a href = "https://github.com/anderson202" title="GitHub"><i class="fa fa-github-square fa-2x"></i></a>
+				<a href = "http://codepen.io/Sec/" title="Codepen"><i class="fa fa-codepen fa-2x"></i></a>
+				<a href = "https://ca.linkedin.com/pub/anderson-ng/a0/337/807" title = "LinkedIn">
+				<i class="fa fa-linkedin-square fa-2x"></i></a>
+				<div id="end"><p>&copy; 2015 Anderson Ng</p></div>
+			</section>
+		</div>
+
+			
+			
+		
+
+
+
+	</body>
+</html>
